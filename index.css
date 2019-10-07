@@ -23,7 +23,7 @@ div#links a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-div#links a.icon svg {
+div#links a svg {
   display: inline-block;
   width: 36px;
   height: 36px;

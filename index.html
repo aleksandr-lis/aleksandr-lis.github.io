@@ -7,23 +7,23 @@
 </head>
 <body id="body" onload="feather.replace()">
   <div id="links">
-    <a class="icon" href="https://lis.space"><span data-feather="home"></span></a>
-    <a class="icon" href="https://www.instagram.com/lis.space"><span data-feather="instagram"></span></a>
-    <a class="icon" href="https://facebook.com/aleksandrlis"><span data-feather="facebook"></span></a>
-    <a class="icon" href="https://linkedin.com/in/aleksandrlis"><span data-feather="linkedin"></span></a>
-    <a class="icon" href="https://github.com/lis-space"><span data-feather="github"></span></a>
+    <a href="https://lis.space"><span data-feather="home"></span></a>
+    <a href="https://www.instagram.com/lis.space"><span data-feather="instagram"></span></a>
+    <a href="https://facebook.com/aleksandrlis"><span data-feather="facebook"></span></a>
+    <a href="https://linkedin.com/in/aleksandrlis"><span data-feather="linkedin"></span></a>
+    <a href="https://github.com/lis-space"><span data-feather="github"></span></a>
   </div>
   <script type="text/javascript">
     function getColor() {
-      var r = Math.floor(Math.random()*190) + 10
-      var g = Math.floor(Math.random()*190) + 10
-      var b = Math.floor(Math.random()*190) + 10
-      return 'rgb(' + r + ',' + g + ',' + b + ')'
+      let r = Math.floor(Math.random() * 190) + 10
+      let g = Math.floor(Math.random() * 190) + 10
+      let b = Math.floor(Math.random() * 190) + 10
+      return `rgb(${r}, ${g}, ${b})`
     }
     document.body.style.backgroundColor = getColor()
     document.getElementsByClassName('blank')[0].onclick = function(event) {
       event.preventDefault()
-      var color = getColor()
+      let color = getColor()
       document.body.style.backgroundColor = color
     }
   </script>
