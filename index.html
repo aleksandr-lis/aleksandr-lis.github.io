@@ -22,11 +22,6 @@
       return `rgb(${r}, ${g}, ${b})`
     }
     document.body.style.backgroundColor = getColor()
-    document.getElementsByClassName('blank')[0].onclick = function(event) {
-      event.preventDefault()
-      let color = getColor()
-      document.body.style.backgroundColor = color
-    }
   </script>
 </body>
 </html>
